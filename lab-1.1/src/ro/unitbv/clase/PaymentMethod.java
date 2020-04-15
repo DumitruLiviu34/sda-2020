@@ -1,7 +1,7 @@
 package ro.unitbv.clase;
 
 public class PaymentMethod {
-	String type;
+	private String type;
 
 	public PaymentMethod(String type) {
 		this.type = type;

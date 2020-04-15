@@ -6,11 +6,7 @@ public class Sir {
 
 	public static void main(String[] args) {
 		double[] sir = { 30, 40, 33, 44, 38.5, 41.1, 33.3 };
-		int index1 = 0;
-		for (int j = 0; j < sir.length; j++) {
-			index1++;
-		}
-		double[] siri = new double[index1];
+		double[] siri = new double[sir.length];
 		for (int j = 0; j < sir.length; j++) {
 			siri[j] = sir[j];
 		}

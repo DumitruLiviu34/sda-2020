@@ -2,7 +2,7 @@ package ro.unitbv.IfElseProblem;
 
 public class IfElseProblem {
 
-//	!!!!!       Doua ce arti terminat de srics codul formatati fisierul cu Ctrl+shift+f
+//	!!!!!       Dupaa ce arti terminat de srics codul formatati fisierul cu Ctrl+shift+f
 
 	public static void main(String[] args) {
 
@@ -37,8 +37,7 @@ public class IfElseProblem {
 		} else if (roadType == "Oras") {
 			System.out.println("Viteza maxima in Oras=");
 			return 50;
-		} else if (roadType != "Drum Expres" && roadType != "Oras" && roadType != "Autostrada"
-				&& roadType != "Zona Rezidentiala") {
+		} else {
 			System.out.println("Drumul este necunoscut=");
 		}
 
@@ -64,16 +63,13 @@ public class IfElseProblem {
 						System.out.println("Viteza maxima in Oras=");
 						return 50;
 					} else {
-						if (roadType != "Autostrada" && roadType != "Oras" && roadType != "Drum Expres"
-								&& roadType != "Zona Rezidentiala") {
-
 							System.out.println("Drumul este necunoscut=");
 						}
 					}
 				}
 
 			}
-		}
+		
 		return 0;
 
 	}
@@ -93,10 +89,10 @@ public class IfElseProblem {
 			System.out.println("Viteza maxima in oras");
 			return 50;
 		default:
-			System.out.println("Drum Necunoscut");
+			return 0;
 		}
 
-		return 0;
+		
 	}
 
 }
