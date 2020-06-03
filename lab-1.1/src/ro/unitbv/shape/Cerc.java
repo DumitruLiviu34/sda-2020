@@ -21,7 +21,7 @@ public class Cerc implements Shape {
 
 	public double getArea() {
 
-		boolean ok = validateDimension.validateCircle(radius);
+		boolean ok = validateDimension.validateCerc(radius);
 
 		if (ok == true)
 			return 3.14 * (radius * radius);
@@ -52,7 +52,7 @@ public class Cerc implements Shape {
 		return "\0";
 	}
 
-	public void Draw() {
+	public void draw() {
 		 int posX = 4;
 	     int posY = 8;
 

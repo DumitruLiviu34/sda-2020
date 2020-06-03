@@ -2,38 +2,38 @@ package ro.unitbv.shape;
 
 public class ShapeDimensionValidator {
 
-	Boolean validateSquare(int size) {
+	Boolean validatePatrat(int size) {
 
 		Boolean ok = true;
 
 		if (size < 0) {
 			ok = false;
-			throw new IllegalArgumentException("The size must be greater then 0!");
+			throw new IllegalArgumentException("Marimea trebuie sa fie mai mare decat 0!");
 
 		}
 
 		return ok;
 	}
 
-	Boolean validateRectangle(int width, int height) {
+	Boolean validateDreptunghi(int width, int height) {
 
 		Boolean ok = true;
 
 		if (width < 0 || height < 0) {
 			ok = false;
-			throw new IllegalArgumentException("The width/height must be greater then 0!");
+			throw new IllegalArgumentException("Latimea si inaltimea trebuie sa fie mai mare decat 0!");
 
 		}
 
 		return ok;
 	}
 
-	Boolean validateCircle(int radius) {
+	Boolean validateCerc(int radius) {
 
 		Boolean ok = true;
 		if (radius < 0) {
 			ok = false;
-			throw new IllegalArgumentException("The radius must be greater then 0!");
+			throw new IllegalArgumentException("Raza trebuie sa fie mai mare decat 0!");
 
 		}
 

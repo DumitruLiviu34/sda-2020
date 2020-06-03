@@ -6,7 +6,7 @@ public class BorderClassValidator {
 
 		if (borderWidth < 0) {
 			ok = false;
-			throw new IllegalArgumentException("The value for borderWidth cannot be less then 0");
+			throw new IllegalArgumentException("Valorea BorderWidth nu poate fi mai mica decat 0");
 		}
 
 		return ok;

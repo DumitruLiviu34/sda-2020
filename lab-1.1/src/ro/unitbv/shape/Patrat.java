@@ -22,7 +22,7 @@ public class Patrat implements Shape {
 
 	public double getArea() {// returneaza aria la patrat
 
-		boolean ok = validateDimensions.validateSquare(size);
+		boolean ok = validateDimensions.validatePatrat(size);
 
 		if (ok == true)
 			return size * size;
@@ -51,7 +51,7 @@ public class Patrat implements Shape {
 		return "\0";
 	}
 
-	public void Draw() {
+	public void draw() {
 
 		String a[][] = new String[size][size];
 

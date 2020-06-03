@@ -7,14 +7,14 @@ public class HexColorValidator {
 
 		if (colorHex.charAt(0) != '#') {
 			ok = false;
-			throw new IllegalArgumentException("The Hex color you provided is not valid: no # found!");
+			throw new IllegalArgumentException("Culoarea Hex pe care ați furnizat-o nu este validă: no # found!");
 
 		}
 
 		if (colorHex.length() > 7) {
 			ok = false;
 			throw new IllegalArgumentException(
-					"The Hex color you provided is not valid: The number of characters is not 7");
+					"Culoarea Hex pe care ați furnizat-o nu este validă: numărul de caractere nu este de 7");
 
 		}
 
@@ -22,11 +22,16 @@ public class HexColorValidator {
 		while (i < 7)
 
 		{
-			if (colorHex.charAt(i) < 'a' && colorHex.charAt(i) < '0'
-					|| colorHex.charAt(i) > 'f' && colorHex.charAt(i) > '9') {
-				ok = false;
-				throw new IllegalArgumentException(
-						"The Hex color you provided is not valid: Only digits and characters between a and f are accepted");
+			if ((colorHex.charAt(i) != 'a') && (colorHex.charAt(i) != 'b') && (colorHex.charAt(i) != 'c')
+                    && (colorHex.charAt(i) != 'd') && (colorHex.charAt(i) != 'e') && (colorHex.charAt(i) != 'f')
+                    && (colorHex.charAt(i) != '1') && (colorHex.charAt(i) != '2') && (colorHex.charAt(i) != '3')
+                    && (colorHex.charAt(i) != '4') && (colorHex.charAt(i) != '5') && (colorHex.charAt(i) != '6')
+                    && (colorHex.charAt(i) != '0') && (colorHex.charAt(i) != '7') && (colorHex.charAt(i) != '8')
+                    && (colorHex.charAt(i) != '9') && (colorHex.charAt(i) != 'A') && (colorHex.charAt(i) != 'B')
+                    && (colorHex.charAt(i) != 'C') && (colorHex.charAt(i) != 'D') && (colorHex.charAt(i) != 'E')
+                    && (colorHex.charAt(i) != 'F')) {
+                ok = false;
+                throw new IllegalArgumentException("codul hex invalid");
 			}
 
 			i++;

@@ -2,7 +2,7 @@ package ro.unitbv.shape;
 
 public interface Shape {
 
-	void Draw();
+	void draw();
 
 	double getArea();
 

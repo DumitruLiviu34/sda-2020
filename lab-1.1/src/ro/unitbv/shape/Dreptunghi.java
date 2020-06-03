@@ -24,7 +24,7 @@ public class Dreptunghi implements Shape {
 
 	public double getArea() {// returneaza aria la patrat
 
-		boolean ok = validateDimensions.validateRectangle(width, height);
+		boolean ok = validateDimensions.validateDreptunghi(width, height);
 
 		if (ok == true)
 			return height * width;
@@ -54,7 +54,7 @@ public class Dreptunghi implements Shape {
 
 	}
 
-	public void Draw() {
+	public void draw() {
 
 		String a[][] = new String[width][height];
 
